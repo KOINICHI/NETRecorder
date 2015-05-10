@@ -1,0 +1,14 @@
+c:\users\sachika\documents\visual studio 2012\Projects\NETRecorder\NETRecorder\bin\Debug\NETRecorder.exe.config
+c:\users\sachika\documents\visual studio 2012\Projects\NETRecorder\NETRecorder\bin\Debug\NETRecorder.exe
+c:\users\sachika\documents\visual studio 2012\Projects\NETRecorder\NETRecorder\bin\Debug\NETRecorder.pdb
+c:\users\sachika\documents\visual studio 2012\Projects\NETRecorder\NETRecorder\obj\Debug\NETRecorder.csprojResolveAssemblyReference.cache
+c:\users\sachika\documents\visual studio 2012\Projects\NETRecorder\NETRecorder\obj\Debug\MainWindow.baml
+c:\users\sachika\documents\visual studio 2012\Projects\NETRecorder\NETRecorder\obj\Debug\MainWindow.g.cs
+c:\users\sachika\documents\visual studio 2012\Projects\NETRecorder\NETRecorder\obj\Debug\App.g.cs
+c:\users\sachika\documents\visual studio 2012\Projects\NETRecorder\NETRecorder\obj\Debug\NETRecorder_MarkupCompile.cache
+c:\users\sachika\documents\visual studio 2012\Projects\NETRecorder\NETRecorder\obj\Debug\NETRecorder.g.resources
+c:\users\sachika\documents\visual studio 2012\Projects\NETRecorder\NETRecorder\obj\Debug\NETRecorder.Properties.Resources.resources
+c:\users\sachika\documents\visual studio 2012\Projects\NETRecorder\NETRecorder\obj\Debug\NETRecorder.csproj.GenerateResource.Cache
+c:\users\sachika\documents\visual studio 2012\Projects\NETRecorder\NETRecorder\obj\Debug\NETRecorder.exe
+c:\users\sachika\documents\visual studio 2012\Projects\NETRecorder\NETRecorder\obj\Debug\NETRecorder.pdb
+C:\Users\Sachika\documents\visual studio 2012\Projects\NETRecorder\NETRecorder\obj\Debug\App.baml

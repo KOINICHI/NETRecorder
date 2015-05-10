@@ -1,0 +1,95 @@
+﻿<Window x:Class="NETRecorder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="200" Width="200" Icon="./ico.ico"
+        Background="Transparent" WindowStyle="None" AllowsTransparency="True" Topmost="True" ResizeMode="NoResize">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Malgun Gothic" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Foreground" Value="Black" />
+        </Style>
+    </Window.Resources>
+    <Grid Name="RootLayerGrid" Background="White" Width="180" Height="180">
+        <Grid.Effect>
+            <DropShadowEffect Color="Black" Direction="270" BlurRadius="15" ShadowDepth="2"  />
+        </Grid.Effect>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="140" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FF9BBB5A">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Name="RefreshButtonImage" Background="Black">
+                <Button.OpacityMask>
+                    <ImageBrush ImageSource="./RefreshBtn.png" Stretch="Uniform" />
+                </Button.OpacityMask>
+            </Button>
+            <Button Grid.Column="1" Name="SettingButtonImage" Background="Black">
+                <Button.OpacityMask>
+                    <ImageBrush ImageSource="./SettingBtn.png" Stretch="Uniform" />
+                </Button.OpacityMask>
+            </Button>
+            <Button Grid.Column="3" Name="MinimizeButtonImage" Background="Black">
+                <Button.OpacityMask>
+                    <ImageBrush ImageSource="./MinimizeBtn.png" Stretch="Uniform" />
+                </Button.OpacityMask>
+            </Button>
+            <Button Grid.Column="4" Name="ExitButtonImage" Background="Black">
+                <Button.OpacityMask>
+                    <ImageBrush ImageSource="./ExitBtn.png" Stretch="Uniform" />
+                </Button.OpacityMask>
+            </Button>
+        </Grid>
+        <Grid Grid.Row="1" Name="DisplayLayout">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Content="DL" Background="#FF9BBB5A" />
+                <Label Grid.Row="1" Content="UL" />
+                <Label Grid.Row="2" Content="DL/s" Background="#FF9BBB5A" />
+                <Label Grid.Row="3" Content="UL/s" />
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="35" />
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Name="TotalDownloadLabel" Content="1.00 GB" Background="#FF9BBB5A" />
+                <Label Grid.Row="1" Name="TotalUploadLabel" Content="1.00 MB" />
+                <Label Grid.Row="2" Name="DownloadSpeedLabel"  Content="1.00 MB/s" Background="#FF9BBB5A" />
+                <Label Grid.Row="3" Name="UploadSpeedLabel"  Content="1.00 KB/s" />
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1" Name="SettingLayout" Background="White" Margin="0,140,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35" />
+                <RowDefinition Height="35" />
+                <RowDefinition Height="35" />
+                <RowDefinition Height="35" />
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <Label Content="Every" />
+                <TextBox Name="UpdateIntervalTextBox" Text="1" MaxLength="3" Width="40" />
+                <Label Name="UpdateIntervalUnitLabel" Content="second" />
+            </StackPanel>
+            <Separator Grid.Row="1" VerticalAlignment="Top" Margin="0" Background="#FF9BBB5A" />
+        </Grid>
+    </Grid>
+</Window>
